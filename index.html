@@ -13,15 +13,17 @@
     <header class="header">
       <nav>
         <ul class="header__links-list">
-          <li
-            class="header__link_active header__links-list-item_no-bullet"
-          >
-            <a>главная</a>
+          <li class="header__links-list-item_no-bullet">
+            <a class="link_active">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a href="#qlots">посмотреть лоты</a>
           </li>
           <li>
-            <a class="header__links-list-item" href="#qlots">посмотреть лоты</a>
+            <a class="header__links-list-item" href="#qabout__title"
+              >об аукционе</a
+            >
           </li>
-          <li><a class="header__links-list-item" href="#qabout__title">об аукционе</a></li>
         </ul>
       </nav>
       <a class="header__logo" href="#0">
@@ -31,7 +33,7 @@
           alt="Логотип"
         />
       </a>
-      <address class="header__address">
+      <address class="address">
         <a href="tel:+70000000">+9 999 555 5555</a><br />
         <a href="mailto:mail@example.com">info@sobaka.ge</a><br />
         наб. Принсенграхт 263-<br />
@@ -55,53 +57,60 @@
             ></span
           >
         </h1>
-        <p class="cover__description-text">
-          Аукцион вещей, в которые никто не верил
-        </p>
-        <button class="bet-button">Сделать ставку</button>
+        <div class="description">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button">Сделать ставку</button>
+        </div>
       </section>
-      <section class="lots" id="qlots">
+      <section class="cards" id="qlots">
         <h2 class="lots__heading">лоты</h2>
-        <div class="lots__card card_type_film">
-          <div class="overlay"></div>
-          <article class="card__title">
-            <a href="#0">Фильм режиссёра, который бросил киношколу</a>
-          </article>
-          <p class="lots__card-text">
-            Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка,
-            если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-          </p>
-        </div>
-        <div class="lots__card card_type_book">
-          <div class="overlay"></div>
-          <article class="card__title">
-            <a href="#0"
-              >Книга, где описан один скучный день из жизни рекламного агента</a
-            >
-          </article>
-          <p class="lots__card-text">
-            Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-            переходами на древнеанглийский. В ней одновременно рассказывается о
-            16 июня 1904 года и об истории литературы, начиная с античных
-            времён. И это всё накладывается на эпическую поэму Гомера. Сколько
-            бы вы поставили на «Улисса» Джеймса Джойса?
-          </p>
-        </div>
-        <div class="lots__card card_type_picture">
-          <div class="overlay"></div>
-          <article class="card__title">
-            <a href="#0"
-              >Картина, которую повторит даже 5-летний сын маминой подруги</a
-            >
-          </article>
-          <p class="lots__card-text">
-            Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
-            похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
-            Сколько бы вы на такое поставили, если бы не знали, что это — одна
-            из революционных работ Кандинского?
-          </p>
-        </div>
-        <h3 class="lots__look-more-link"><a href="#0">посмотреть больше</a></h3>
+        <ul class="lots">
+          <a href="#0" class="anch"
+            ><li class="lots__card card_type_film">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Фильм режиссёра, который бросил киношколу
+              </h3>
+              <p class="lots__card-text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </li></a
+          >
+          <a href="#0" class="anch"
+            ><li class="lots__card card_type_book">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Книга, где описан один скучный день из жизни рекламного агента
+              </h3>
+              <p class="lots__card-text">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+                переходами на древнеанглийский. В ней одновременно
+                рассказывается о 16 июня 1904 года и об истории литературы,
+                начиная с античных времён. И это всё накладывается на эпическую
+                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
+                Джойса?
+              </p>
+            </li></a
+          >
+          <a href="#0" class="anch"
+            ><li class="lots__card card_type_picture">
+              <div class="overlay"></div>
+              <h3 class="card__title">
+                Картина, которую повторит даже 5-летний сын маминой подруги
+              </h3>
+              <p class="lots__card-text">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                котиков... Сколько бы вы на такое поставили, если бы не знали,
+                что это — одна из революционных работ Кандинского?
+              </p>
+            </li></a
+          >
+        </ul>
+        <a class="lots__look-more-link" href="#0">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about__column">
@@ -120,7 +129,7 @@
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
             странные вещи, созданные любителями?
           </p>
-          <p class="about__text second__p">
+          <p class="about__text description__p">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
             Когда-то они казались просто неудачными. Но, несмотря на критику,
@@ -132,17 +141,23 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__address">
+      <address class="address ftr__address">
         <a href="tel:+70000000">+9 999 555 5555</a><br />
         <a href="mailto:mail@example.com">info@sobaka.ge</a><br />
         наб. Принсенграхт 263-<br />
         265, Амстердам
       </address>
-      <ul class="footer__links-list">
-        <li class="header__link_active"><a>главная</a></li>
-        <li><a class="footer__links-list" href="#qlots">посмотреть лоты</a></li>
-        <li><a class="footer__links-list" href="#qabout__title">об аукционе</a></li>
-      </ul>
+      <nav>
+        <ul class="footer__links-list">
+          <li class="link_active"><a>главная</a></li>
+          <li>
+            <a class="footer__links-list" href="#qlots">посмотреть лоты</a>
+          </li>
+          <li>
+            <a class="footer__links-list" href="#qabout__title">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
       <div class="footer__social-list">
         <a href="#0" class="footer__social-list-item"
           ><img src="./images/yt.svg" alt="Логотип Ютуб"
