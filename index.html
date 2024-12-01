@@ -68,46 +68,53 @@
         <h2 class="lots__heading">лоты</h2>
         <ul class="lots">
           <li class="lots__card card_type_film">
-            <a href="#0" class="anch">
-              <div class="overlay"></div>
-              <h3 class="card__title">
-                Фильм режиссёра, который бросил киношколу
-              </h3>
-              <p class="lots__card-text">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p></a
+            <a href="#0" class="card_anchor">
+              <article class="card__article">
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="lots__card-text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </article></a
             >
           </li>
           <li class="lots__card card_type_book">
-            <a href="#0" class="anch">
-              <div class="overlay"></div>
-              <h3 class="card__title">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </h3>
-              <p class="lots__card-text">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </p></a
+            <a href="#0" class="card_anchor">
+              <article class="card__article">
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="lots__card-text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </article></a
             >
           </li>
           <li class="lots__card card_type_picture">
-            <a href="#0" class="anch">
-              <div class="overlay"></div>
+            <a href="#0" class="card_anchor">
+              <article class="card__article">
+                <div class="overlay"></div>
 
-              <h3 class="card__title">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </h3>
-              <p class="lots__card-text">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </p></a
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="lots__card-text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </article></a
             >
           </li>
         </ul>
@@ -130,7 +137,7 @@
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
             странные вещи, созданные любителями?
           </p>
-          <p class="about__text description__p">
+          <p class="about__text description__paragraph">
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
             Когда-то они казались просто неудачными. Но, несмотря на критику,
@@ -142,7 +149,7 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="address ftr__address">
+      <address class="address footer__address">
         <a href="tel:+70000000">+9 999 555 5555</a><br />
         <a href="mailto:mail@example.com">info@sobaka.ge</a><br />
         наб. Принсенграхт 263-<br />
@@ -152,22 +159,31 @@
         <ul class="footer__links-list">
           <li class="link_active"><a>главная</a></li>
           <li>
-            <a class="footer__links-list" href="#qlots">посмотреть лоты</a>
+            <a href="#qlots">посмотреть лоты</a>
           </li>
           <li>
-            <a class="footer__links-list" href="#qabout__title">об аукционе</a>
+            <a href="#qabout__title">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <div class="footer__social-list">
-        <a href="#0" class="footer__social-list-item"
-          ><img src="./images/yt.svg" alt="Логотип Ютуб"
+      <div class="footer__social-links">
+        <a href="#0"
+          ><img
+            class="footer__social-links-item"
+            src="./images/yt.svg"
+            alt="Логотип Ютуб"
         /></a>
-        <a href="#0" class="footer__social-list-item"
-          ><img src="./images/vk.svg" alt="Логотип Вконтакте"
+        <a href="#0"
+          ><img
+            class="footer__social-links-item"
+            src="./images/vk.svg"
+            alt="Логотип Вконтакте"
         /></a>
-        <a href="#0" class="footer__social-list-item"
-          ><img src="./images/pinterest.svg" alt="Логотип Пинтерест"
+        <a href="#0"
+          ><img
+            class="footer__social-links-item"
+            src="./images/pinterest.svg"
+            alt="Логотип Пинтерест"
         /></a>
       </div>
     </footer>
